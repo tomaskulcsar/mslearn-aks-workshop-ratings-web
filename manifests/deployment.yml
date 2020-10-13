@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: tomaskulcsarmslearnaksworkshopratingsweb 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tomaskulcsarmslearnaksworkshopratingsweb
+  template:
+    metadata:
+      labels:
+        app: tomaskulcsarmslearnaksworkshopratingsweb 
+    spec:
+      containers:
+        - name: tomaskulcsarmslearnaksworkshopratingsweb 
+          image: acr31608.azurecr.io/tomaskulcsarmslearnaksworkshopratingsweb
+          ports:
+          - containerPort: 8080
