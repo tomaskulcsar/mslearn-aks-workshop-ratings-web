@@ -1,10 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: tomaskulcsarmslearnaksworkshopratingsweb
+  name: ratings-web
 spec:
-    type: LoadBalancer
-    ports:
-    - port: 8080 
-    selector:
-        app: tomaskulcsarmslearnaksworkshopratingsweb
+  selector:
+    app: ratings-web
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+  type: LoadBalancer
