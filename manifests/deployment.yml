@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: tomaskulcsarmslearnaksworkshopratingsweb
-        image: acr31608.azurecr.io/tomaskulcsarmslearnaksworkshopratingsweb:v1 # IMPORTANT: update with your own repository
+        image: acr31608.azurecr.io/tomaskulcsarmslearnaksworkshopratingsweb # IMPORTANT: update with your own repository
         imagePullPolicy: Always
         ports:
         - containerPort: 8080 # the application listens to this port
